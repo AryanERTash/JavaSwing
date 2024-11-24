@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 
 
 public class MulButton {
@@ -20,11 +21,8 @@ public class MulButton {
       panelGrid.setBackground(Color.YELLOW);
 
       JPanel panelGridDown = new JPanel(new GridLayout(1,1));
-      panelGridDown.setBackground(Color.ORANGE);
+      panelGridDown.setBackground(Color.BLACK);
       panelGridDown.setPreferredSize(new Dimension(400, 100));
-
-
-
       
       // panel.setPreferredSize(new Dimension());
       
@@ -38,9 +36,7 @@ public class MulButton {
       JButton fourthBtn = new JButton("Fourth");
 
       JLabel messageLabel = new JLabel("Hello", SwingConstants.CENTER);
-   
-
-
+      messageLabel.setForeground(Color.WHITE);
 
       panelGrid.add(firstBtn);
       panelGrid.add(secondBtn);
@@ -55,12 +51,6 @@ public class MulButton {
       secondBtn.addActionListener(listener);
       thirdBtn.addActionListener(listener);
       fourthBtn.addActionListener(listener);
-
-
-
-
-
-
 
    }
 }
